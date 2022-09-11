@@ -20,6 +20,11 @@
     font-family: 'Pretendard-Regular';
 }
 
+*::selection {
+    color: #232323;
+    background-color: rgba(8, 0, 255, 0.12);
+}
+
 body {
     /*background-color: rgba(0, 35, 192, 0.64);*/
 }
@@ -114,7 +119,7 @@ body {
 }
 
 
-.link a svg {
+.link a > * {
     width: 32px;
 
     fill: #282828;
@@ -123,7 +128,7 @@ body {
     transition: 250ms;
 }
 
-.link a svg:hover {
+.link a > *:hover {
     transform: scale(1.25) rotateZ(5deg);
 }
 
